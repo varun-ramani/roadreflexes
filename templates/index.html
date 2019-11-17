@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/css/index.css">
+        <title>Reflex Game</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container" id="intro">
+            <div id="initpadder"></div>
+            <div class="row">
+                <div class="col s12">
+                    <h1 class="center-align" id="title">RoadReflexes.ml</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="flexbox">
+                    <div class="green waves-effect waves-light large center-align" id="playbutton" onclick="startgame()">
+                        <i class="material-icons large white-text">play_circle_outline</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 id='zoomtext' class="center-align"></h1>
+
+        <div class="container">
+            <h2 id="instructions">
+                Test your reflexes! When the background color of the circle is red, green, or yellow, press the indicated arrow key as soon as possible. Your score will be displayed after 15 trials - the game should take no more than a minute to complete. Press any key to continue.
+            </h2>
+        </div>
+
+        <div class="container">
+            <pre id="outro">
+                Test your reflexes! When the background color of the circle is red, green, or yellow, press the indicated arrow key as soon as possible. Your score will be displayed after 15 trials - the game should take no more than a minute to complete. Press any key to continue.
+            </pre>
+        </div>
+
+        <audio autoplay="autoplay" loop>
+            <source src="/static/audio/music.mp3" />     
+        </audio>
+
+        <div id="game">
+            <i id="gamearrow" class="material-icons">play_circle_outline</i>
+        </div>
+    </body>
+
+    <!-- <script src="../static/js/index.js"></script> -->
+    <script src="../static/js/voice.js"></script>
+    <script src="../static/js/game.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>

@@ -1,0 +1,175 @@
+body {
+    height: 100vh;
+    width: 100%;
+
+    background-image: url('/static/images/background.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow-x: hidden;
+}
+
+#zoomtext {
+    padding-top: 30vh;
+    color: lightcoral;
+    position: absolute;
+    font-family: Shadows Into Light; 
+    text-align: center;
+    z-index: 100;
+    width: 100vw;
+    font-size: 0em;
+    animation: zoomIn 1s;
+    display: none;
+    font-weight: bold;
+    font-family: 'ZCOOL KuaiLe';
+}
+
+#instructions {
+    padding-top: 30vh;
+    color: orange;
+    font-family: Shadows Into Light; 
+    text-align: center;
+    z-index: 100;
+    width: 100%;
+    display: none;
+    font-weight: bold;
+    font-family: 'ZCOOL KuaiLe';
+}
+
+#outro {
+    padding-top: 10vh;
+    color: orange;
+    font-family: Shadows Into Light; 
+    text-align: center;
+    z-index: 100;
+    width: 100%;
+    font-size: 1.6rem;
+    display: none;
+    font-weight: bold;
+    font-family: 'ZCOOL KuaiLe';
+}
+
+#game {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: black;
+    padding: 3rem;
+    border-radius: 10000em;
+}
+
+#gamearrow {
+    font-size: 9rem;
+    color: black;
+}
+
+@keyframes instructionsAnim {
+    0% {
+        color: black;
+    }
+
+    20% {
+        color: lightgreen;
+    }
+
+    30% {
+        color: white;
+    }
+
+    40% {
+        color: grey;
+    }
+
+    50% {
+        color: darkblue;
+    }
+
+    60% {
+        color: yellow;
+    }
+
+    70% {
+        color: red;
+    }
+
+    80% {
+        color: green;
+    }
+
+    90% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+        
+}
+
+@keyframes zoomIn {
+    from {
+        font-size: 20em;
+    }
+
+    to {
+        font-size: 0em;
+    }
+}
+
+#title {
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    color: white;
+    font-size: 8rem;
+    font-family: 'Shadows Into Light';
+    font-weight: bold;
+    transform: rotate(0deg);
+    animation: titleAnim 1s infinite;
+}
+
+@keyframes titleAnim {
+    0% {
+        transform: rotate(0deg);
+        color: white;
+    }
+
+    20% {
+        transform: rotate(10deg);
+        color: lightcoral;
+    }
+
+    40% {
+        transform: rotate(0deg);
+        color: lightgreen;
+    }
+
+    60% {
+        transform: rotate(-10deg);
+        color: lightgreen;
+    }
+
+    80% {
+        transform: rotate(10deg);
+        color: lightcoral;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        color: white;
+    }
+
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#playbutton {
+    padding: 2em;
+    border-radius: 10000em;
+}
