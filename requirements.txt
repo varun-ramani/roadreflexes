@@ -41,7 +41,7 @@ mccabe==0.6.1
 msgpack==0.5.6
 neovim==0.3.0
 netifaces==0.10.4
-numpy==1.17.3
+numpy==1.22.0
 oauthlib==2.1.0
 protobuf==3.6.1
 pycairo==1.16.2
